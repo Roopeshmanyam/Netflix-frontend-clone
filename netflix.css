@@ -170,6 +170,9 @@ nav{
    width: 555px;
 }
 
+body{
+   overflow-x: hidden;
+}
 section.first>div{
    display: flex;
    flex-direction: column;
