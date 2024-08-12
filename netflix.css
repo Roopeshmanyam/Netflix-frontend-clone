@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/images/netp3.jpg");
+    height: 90vh;
+    position: relative;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: max(1000px,100vw);
+}
+
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.72;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav img{
+    width: 150px;
+    position: relative;
+    z-index:10;
+}
+
+nav{
+    position: relative;
+    z-index: 10;
+    padding: 10px 0px;
+}
+
+.hero{
+    font-family: sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding:0 30px;
+}
+
+ .hero> :first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+ }
+
+ .hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+ }
+
+ .hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ .layline{
+      height: 7px;
+      background-color: rgb(46, 44, 44);
+      position: relative;
+      z-index: 20;
+ }
+
+ .btn{
+    padding: 8px 15px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.857);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    background-color: rgba(23, 23, 23, 0.7);
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
+ .btn-red{
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 4px;   
+ }
+
+ .btn-red-sm{
+    background-color: red;
+    color: white;
+ }
+
+ .hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .main input{
+    background-color: rgba(23, 23, 23, 0.7);
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 24px;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+ }
+
+ .first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+ }
+@media screen and (max-width:1300px) {
+   .first{
+      flex-wrap: wrap;
+   }
+   nav{
+      max-width: 90vw;
+   }
+   .hero-buttons{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+   }
+
+}
+ .secImg {
+   position: relative;
+}
+
+.secImg img {
+   width: 555px;
+   position: relative;
+   z-index: 10;
+}
+
+.secImg video {
+   position: absolute;
+   top: 51px;
+   right: 0;
+   width: 555px;
+}
+
+section.first>div{
+   display: flex;
+   flex-direction: column;
+   padding: 34px 0px;
+}
+
+section.first>div :nth-child(1){
+   font-size: 50px;
+   font-weight: bolder;  
+}
+
+section.first>div :nth-child(2){
+   font-size: 26px;
+}
+
+.faq h2{
+   text-align: center;
+   font-weight: bolder;
+   font-size: 48px;
+   padding: 18px;
+}
+
+.faq{
+   background-color: black;
+   color: white;
+   padding: 40px;
+}
+
+.faqbox:hover{
+   background-color: #3f3e3e;
+}
+
+.faqbox {
+   transition: all 1s ease-in-out;
+   background-color: #2d2d2d;
+   display: flex;
+   padding: 33px;
+   margin: 10px auto;
+   max-width: 65vw;
+   justify-content: space-between;
+   cursor: pointer;
+   font-weight: 80px;
+   font-size: 24px;
+}
+
+.faqbox svg{
+   filter: invert(1);
+   font-weight: bolder;
+}
+footer {
+   color: rgba(255, 255, 255, 0.7);
+   max-width: 60vw;
+   margin: auto;
+   padding: 60px;
+}
+.footer{
+   display: grid;
+   grid-template-columns: 2fr 2fr 2fr;
+   color: rgba(255, 255, 255, 0.7); 
+   }
+
+   @media screen and (max-width:1300px) {
+      .footer{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         color: rgba(255, 255, 255, 0.7);
+         gap: 30px;
+      }
+      .faq h2{
+         text-align: center;
+         font-weight: bolder;
+         font-size: 32px;
+         padding: 18px;
+      }
+   }
+
+.footer-item{
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.footer a{
+   color:rgba(255, 255, 255, 0.7);
+   font-size: 15px;
+}
+footer div{
+   padding: 10px 0;
+}
